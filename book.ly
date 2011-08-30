@@ -70,10 +70,10 @@ a \[ a g \] \[ g a \] \divisioMinima g \[ g a bes \] g f \divisioMinima \[ f f f
 c d \[ f e d e f \] g \divisioMinima 
 }
 
-\score {
-  <<
-    \new VaticanaVoice = "cantus" \transpose f c' \notes
-    \new Lyrics \lyricsto "cantus" { \override LyricText #'self-alignment-X = #LEFT \aspergesLyrics }
-  >>
-}
-
+\score { <<
+  \new VaticanaVoice = "cantus" \transpose f c' \notes
+  \new Lyrics \lyricsto "cantus" {
+    \override LyricText #'X-offset = #-1
+    \override LyricText #'self-alignment-X = #LEFT \aspergesLyrics
+  }
+>> }
