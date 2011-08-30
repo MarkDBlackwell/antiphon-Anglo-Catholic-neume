@@ -46,15 +46,7 @@ g e f g g | g g g g bes
 a a g g a | g g a bes g f | f f f d c |
 c d f e d e f g |
 
-..%}
-
-\version "2.14.1"
-
-\include "gregorian.ly"
-
-\include "lyric.ily"
-
-ps = { }
+basic:
 
 notes = \relative c {
 c d \[ f e d e f \] g \divisioMinima \[ a bes c \] \[ c bes \] \[ a g \] a 
@@ -68,6 +60,37 @@ g \divisioMinima g \[ g bes \] a a \[ a g \] \[ g a \] \divisioMinima
 \[ g e \] \[ f g \] g \divisioMinima g g g \[ g bes \] 
 a \[ a g \] \[ g a \] \divisioMinima g \[ g a bes \] g f \divisioMinima \[ f f f \] \[ d c \] \divisioMinima 
 c d \[ f e d e f \] g \divisioMinima 
+}
+
+..%}
+
+\version "2.14.1"
+
+\include "gregorian.ly"
+
+\include "lyric.ily"
+
+mbreak = { }
+
+% \divisioMinima
+ps = { }
+
+malasatalatasaga       = \relative c  { c \auctum \ascendens d \[ f e d e f \] \augmentum g }
+hapamapahagahagasa     = \relative c' { \[ a \quilisma bes c \] \[ c bes \] \[ a g \] a \[ g f \] }
+gasalatamalama         = \relative c' { \[ g f d \] e \[ c d c \] \augmentum c }
+gahapahagasatalasatasa = \relative c' { \[ g a bes a g \] \[ f e \] d \[ f e f \] }
+masatasaga             = \relative c  { \[ c f e \] \[ f g \] g }
+gapahagaha             = \relative c' { g g \[ g bes \] a \[ a g \] \[ \augmentum g \augmentum a \] }
+gatasaga               = \relative c' { \[ g e \] \[ f g \] g g }
+gahapagasalama         = \relative c' { g g \[ g a bes \] g f \[ f f f \] \[ \augmentum d \augmentum c \] }
+
+notes = {
+  \clef "vaticana-do1" 
+  \malasatalatasaga \hapamapahagahagasa \relative c { \[ e f \] } \gasalatamalama  
+  \malasatalatasaga \gahapahagasatalasatasa                        \gasalatamalama
+  \ps
+  \masatasaga \gapahagaha \gatasaga             \gahapagasalama
+  \masatasaga \gapahagaha \gatasaga \gapahagaha \gahapagasalama
 }
 
 \score { <<
