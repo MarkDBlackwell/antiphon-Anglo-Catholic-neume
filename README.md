@@ -1,17 +1,13 @@
-#asperges-me-antiphon-Anglo-Catholic
-Asperges Me antiphon (Anglo-Catholic version in English) plainsong chant
+#antiphon-Anglo-Catholic-neume
+Antiphons, plainsong chant (Anglo-Catholic version in English) in neumes (Vaticana)
+
+So far, have *Asperges Me*
 
 ##Example Usage
-(Sheet music)
-
-##How To Install
-Look at the PDF in out/book.pdf
+Sheet music; view or print [book.pdf](out/book.pdf)
 
 ##Requirements
-Adobe (Acrobat) Reader
-
-##Testing
-?
+PDF reader such as Adobe (Acrobat) Reader
 
 ##More Information
 [Asperges Me](http://en.wikipedia.org/wiki/Asperges_Me)

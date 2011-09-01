@@ -1,6 +1,9 @@
 *~
+*.lnk
+*.log
+*.mid
+*.midi
 *.pdf
 *.ps
-*.log
 out/
 sample/
