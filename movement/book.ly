@@ -1,6 +1,4 @@
 %{..
-..%}
-%{..
 Author: Mark D. Blackwell.
 Change dates:
 (mdb) August 29, 2011 create first draft
