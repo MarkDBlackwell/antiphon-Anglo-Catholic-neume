@@ -9,16 +9,34 @@ choir  = { }
 ps     = { }
 br     = { \divisioMinima }
 
-malasatalatasaga       = \relative c  {    c \auctum \ascendens d \[ f e d e f \] \augmentum g }
-hapamapahagahagasatasa = \relative c' { \[ a \quilisma bes c \] \[ c bes \] \[ a g \] a \[ g f \] \[ e f \] }
-gasalatamalama         = \relative c' { \[ g f d \] e \[ c d c \] \augmentum c }
-gahapahagasatalasatasa = \relative c' { \[ g a bes a g \] \[ f e \] d \[ f e f \] }
+% \pes 
+% \flexa 
+% \augmentum 
 
-masatasaga             = \relative c  { \[ c f e \] \[ f g \] g g g }
-gapahagaha             = \relative c' { \[ g bes \] a \[ a g \] \[ \augmentum g \augmentum a \] s }
-gatasaga               = \relative c' { \[ g e \] \[ f g \] g g g }
-gahapagasalama         = \relative c' {    g \[ g a bes \] g f \[ f f f \] \[ \augmentum d \augmentum c \] s }
 
+malasatalatasaga       = \relative c  {
+   c \auctum \ascendens d \[ f \flexa e \flexa d \pes e \pes f \] \augmentum g }
+
+hapamapahagahagasatasa = \relative c' {
+\[ a \quilisma bes \pes c \] \[ c \flexa bes \] \[ a \flexa g \] a \[ g \flexa f \] \[ e \pes f \] }
+
+gasalatamalama         = \relative c' {
+\[ g \flexa f \flexa d \] e \[ c \pes d \flexa c \] \augmentum c }
+
+gahapahagasatalasatasa = \relative c' {
+\[ g \pes a \pes bes \flexa a \flexa g \] \[ f \flexa e \] d \[ f \flexa e \pes f \] }
+
+masatasaga             = \relative c  {
+\[ c \pes f \flexa e \] \[ f \pes g \] g g g }
+
+gapahagaha             = \relative c' {
+\[ g \pes bes \] a \[ a \flexa g \] \[ g \pes a \] }
+
+gatasaga               = \relative c' {
+\[ g \flexa e \] \[ f \pes g \] g g g }
+
+gahapagasalama         = \relative c' {
+   g \[ g \pes a \pes bes \] g \flexa f \[ f f f \] \[ d \flexa c \] }
 
 aspergesMeNotes = {
   \clef "vaticana-do1" 
