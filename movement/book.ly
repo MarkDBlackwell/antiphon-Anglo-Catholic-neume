@@ -48,7 +48,7 @@ antiphonPrintableSettings = {
 \include "aspergesMe/score.ily"
 
 \layout { % All layouts.
-  indent = 27\mm  short-indent = 10\mm % Rough.
+  indent = 0\mm  short-indent = 0\mm
   \context { \RemoveEmptyStaffContext }
   \context { \DrumStaff
     \remove "Axis_group_engraver"

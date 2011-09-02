@@ -58,7 +58,7 @@ malasatalatasagaNoLigatures       = \relative c  {
 c \auctum \[ \descendens d \] \[ \virga f e d e f \] \augmentum g }
 
 hapamapahagahagasatasaNoLigatures = \relative c' {
-\[ a \quilisma bes c \] \[ \virga c bes \] \[ \virga a g \] a \[ \virga g f \] \[ e f \] }
+\[ a \quilisma bes c \] \[ \virga c bes \] \[ \virga a g \] a \[ \virga g f \] \[ e \pes f \] }
 
 gasalatamalamaNoLigatures         = \relative c' {
 \[ \virga g f d \] s e \[ c d c \] \augmentum c }
@@ -67,10 +67,10 @@ gahapahagasatalasatasaNoLigatures = \relative c' {
 \[ g \quilisma a \virga bes a g \] \[ \virga f e \] d \[ f e f \] }
 
 masatasagaNoLigatures             = \relative c  {
-\[ \virga c f e \] \[ f g \] g g g }
+\[ \virga c f e \] \[ f \pes g \] g g g }
 
 gapahagahaNoLigatures             = \relative c' {
-\[ g bes \] a \[ \virga a g \] \[ g a \] }
+\[ g \pes bes \] a \[ \virga a g \] \[ g \pes a \] }
 
 gatasagaNoLigatures               = \relative c' {
 \[ \virga g e \] \[ f g \] g g g }
