@@ -1,5 +1,7 @@
 \version "2.14.1"
 
+\include "gregorian.ly"
+
 % \divisioMinima
 
 % mbreak = { \break } % Didn't work, somehow. Vaticana?
@@ -55,28 +57,28 @@ aspergesMeNotes = {
 ..%}
 
 malasatalatasagaNoLigatures       = \relative c  {
-c \auctum \[ \descendens d \] \[ \virga f e d e f \] \augmentum g }
+c \[ \auctum \descendens d \] \[ \virga f \inclinatum e \inclinatum d e \pes \deminutum f \] \augmentum g }
 
 hapamapahagahagasatasaNoLigatures = \relative c' {
 \[ a \quilisma bes c \] \[ \virga c bes \] \[ \virga a g \] a \[ \virga g f \] \[ e \pes f \] }
 
 gasalatamalamaNoLigatures         = \relative c' {
-\[ \virga g f d \] s e \[ c d c \] \augmentum c }
+\[ \virga g \inclinatum f \inclinatum d \] s e \[ c d c \] \augmentum c }
 
 gahapahagasatalasatasaNoLigatures = \relative c' {
-\[ g \quilisma a \virga bes a g \] \[ \virga f e \] d \[ f e f \] }
+\[ g \quilisma a \virga bes \inclinatum a \inclinatum g \] \[ \virga f e \] \[ \auctum \descendens d \] \[ f e \pes \deminutum f \] }
 
 masatasagaNoLigatures             = \relative c  {
-\[ \virga c f e \] \[ f \pes g \] g g g }
+\[ \virga c f \flexa \deminutum e \] \[ f \pes g \] g g g }
 
 gapahagahaNoLigatures             = \relative c' {
-\[ g \pes bes \] a \[ \virga a g \] \[ g \pes a \] }
+\[ g \pes bes \] a \[ a \flexa \deminutum g \] \[ g \pes a \] }
 
 gatasagaNoLigatures               = \relative c' {
-\[ \virga g e \] \[ f g \] g g g }
+\[ \virga g e \] \[ f \pes \deminutum g \] g g g }
 
 gahapagasalamaNoLigatures         = \relative c' {
-   g \[ g \quilisma a bes \] g f \[ f f f \] \[ \virga d c \] }
+   g \[ g \quilisma a bes \] \[ \virga g \] f \[ f f f \] s \[ \virga d c \] }
 
 aspergesMeNotesVaticana = \relative c' {
   \clef "vaticana-do1"
