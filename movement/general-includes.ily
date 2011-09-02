@@ -2,8 +2,8 @@
 
 rit = \markup { \italic "rit." }
 
-mBreak = { \break } % Use during development.
-% mBreak = { }
+% mBreak = { \break } % Use during development.
+mBreak = { }
 
 optTenuto = -\tenuto
 % optTenuto = -\tweak #'color #white -\tenuto
@@ -22,7 +22,7 @@ directs us to use:
 . Per http://lists.gnu.org/archive/html/bug-lilypond/2010-09/msg00200.html , to avoid an internal Lilypond error, use instead:
       \override DynamicTextSpanner #'dash-period = #-1
 Lilypond's internals manual says, 'If negative, no line is drawn at all.':
-http://lilypond.org/doc/v2.14/Documentation/internals/dynamictextspanner 
+http://lilypond.org/doc/v2.14/Documentation/internals/dynamictextspanner
 ..%}
 myTextDecrescendoSettings = {
   \set decrescendoSpanner = #'text

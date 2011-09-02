@@ -9,11 +9,7 @@ choir  = { }
 ps     = { }
 br     = { \divisioMinima }
 
-% \pes 
-% \flexa 
-% \augmentum 
-
-
+%{..
 malasatalatasaga       = \relative c  {
    c \auctum \ascendens d \[ f \flexa e \flexa d \pes e \pes f \] \augmentum g }
 
@@ -39,7 +35,7 @@ gahapagasalama         = \relative c' {
    g \[ g \pes a \pes bes \] g \flexa f \[ f f f \] \[ d \flexa c \] }
 
 aspergesMeNotes = {
-  \clef "vaticana-do1" 
+  \clef "vaticana-do1"
          \mbreak \malasatalatasaga
   \choir \mbreak       \hapamapahagahagasatasa
          \mbreak             \gasalatamalama
@@ -48,12 +44,63 @@ aspergesMeNotes = {
          \mbreak             \gasalatamalama
   \ps    \mbreak                         \masatasaga
          \mbreak                               \gapahagaha
-         \mbreak                                     \gatasaga                               
-         \mbreak                                           \gahapagasalama 
-         \mbreak                         \masatasaga 
-         \mbreak                               \gapahagaha 
+         \mbreak                                     \gatasaga
+         \mbreak                                           \gahapagasalama
+         \mbreak                         \masatasaga
+         \mbreak                               \gapahagaha
          \mbreak                                     \gatasaga
          \mbreak                               \gapahagaha
          \mbreak                                           \gahapagasalama
 }
+..%}
 
+malasatalatasagaNoLigatures       = \relative c  {
+%   c d f e d e f g }
+   c \auctum \ascendens d \[ f e d e f \] \augmentum g }
+
+hapamapahagahagasatasaNoLigatures = \relative c' {
+%  a bes c c bes a g a g f e f }
+\[ a \quilisma bes c \] \[ c bes \] \[ a g \] a \[ g f \] \[ e f \] }
+
+gasalatamalamaNoLigatures         = \relative c' {
+%  g f d e c d c c }
+\[ g f d \] e \[ c d c \] \augmentum c }
+
+gahapahagasatalasatasaNoLigatures = \relative c' {
+%  g a bes a g f e d f e f }
+\[ g a bes a g \] \[ f e \] d \[ f e f \] }
+
+masatasagaNoLigatures             = \relative c  {
+%  c f e f g g g g }
+\[ c f e \] \[ f g \] g g g }
+
+gapahagahaNoLigatures             = \relative c' {
+%  g bes a a g g a }
+\[ g bes \] a \[ a g \] \[ g a \] }
+
+gatasagaNoLigatures               = \relative c' {
+%  g e f g g g g }
+\[ g e \] \[ f g \] g g g }
+
+gahapagasalamaNoLigatures         = \relative c' {
+%  g g a bes g f f f f d c }
+   g \[ g a bes \] g f \[ f f f \] \[ d c \] }
+
+aspergesMeNotesVaticana = \relative c' {
+  \clef "vaticana-do1"
+         \mbreak \malasatalatasagaNoLigatures
+  \choir \mbreak       \hapamapahagahagasatasaNoLigatures
+         \mbreak             \gasalatamalamaNoLigatures
+         \mbreak \malasatalatasagaNoLigatures
+         \mbreak                   \gahapahagasatalasatasaNoLigatures
+         \mbreak             \gasalatamalamaNoLigatures
+  \ps    \mbreak                         \masatasagaNoLigatures
+         \mbreak                               \gapahagahaNoLigatures
+         \mbreak                                     \gatasagaNoLigatures
+         \mbreak                                           \gahapagasalamaNoLigatures
+         \mbreak                         \masatasagaNoLigatures
+         \mbreak                               \gapahagahaNoLigatures
+         \mbreak                                     \gatasagaNoLigatures
+         \mbreak                               \gapahagahaNoLigatures
+         \mbreak                                           \gahapagasalamaNoLigatures
+}
