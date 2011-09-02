@@ -27,13 +27,13 @@ gahapahagasatalasatasa = \relative c' {
   \[ g \quilisma a \virga bes \inclinatum a \inclinatum g \] \[ \virga f e \] s \[ \auctum \descendens d \] \[ f e \pes \deminutum f \]
 }
 masatasaga = \relative c  {
-  \[ \virga c f \flexa \deminutum e \] \[ f \pes g \] g \divisioMinima g
+  \[ \virga c f \flexa \deminutum e \] \[ f \pes g \] g
 }
 gapahagaha = \relative c' {
-  \[ g \pes bes \] a \[ a \flexa \deminutum g \] \[ g \episemInitium \pes a \episemFinis \]
+  g \[ g \pes bes \] a \[ a \flexa \deminutum g \] \[ g \episemInitium \pes a \episemFinis \]
 }
 gatasaga = \relative c' {
-  \[ \virga g e \] \[ f \pes \deminutum g \] g g g
+  \[ \virga g e \] \[ f \pes \deminutum g \] g g
 }
 gahapagasalama = \relative c' {
   g \[ g \quilisma a bes \] \[ \virga g \] f \[ f f f \] s \[ \virga d \episemInitium s c \episemFinis \]
@@ -46,11 +46,11 @@ aspergesMeNotesVaticana = \relative c' {
          \mbreak \malasatalatasaga \divisioMaior
          \mbreak                   \gahapahagasatalasatasa
          \mbreak             \gasalatamalama \finalis
-  \ps    \mbreak                         \masatasaga
+  \ps    \mbreak                         \masatasaga \divisioMinima
          \mbreak                               \gapahagaha \divisioMaxima
          \mbreak                                     \gatasaga \divisioMinima
          \mbreak                                           \gahapagasalama \finalis
-         \mbreak                         \masatasaga
+         \mbreak                         \masatasaga \divisioMinima
          \mbreak                               \gapahagaha \divisioMaxima
          \mbreak                                     \gatasaga \divisioMinima
          \mbreak                               \gapahagaha \divisioMaxima
