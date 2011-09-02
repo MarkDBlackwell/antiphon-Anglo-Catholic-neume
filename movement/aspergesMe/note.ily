@@ -18,7 +18,7 @@ malasatalatasaga = \relative c  {
   s c \[ \auctum \descendens d \] \[ \virga f \inclinatum e \inclinatum d e \pes \deminutum f \] \augmentum g
 }
 hapamapahagahagasatasa = \relative c' {
-  \[ a \quilisma bes c \] \[ \virga c bes \] \[ \virga a g \] a \[ \virga g \episemInitium f \episemFinis \] \[ e \pes f \]
+  \[ a \quilisma bes c \] \[ \virga c bes \] \[ \virga a g \] a \[ \virga g \episemInitium f \episemFinis \] \divisioMinima \[ e \pes f \]
 }
 gasalatamalama = \relative c' {
   \[ \virga g \inclinatum f \inclinatum d s \] s e \[ c \episemInitium d c \episemFinis \] \augmentum c \divisioMaxima
@@ -27,7 +27,7 @@ gahapahagasatalasatasa = \relative c' {
   \[ g \quilisma a \virga bes \inclinatum a \inclinatum g \] \[ \virga f e \] s \[ \auctum \descendens d \] \[ f e \pes \deminutum f \]
 }
 masatasaga = \relative c  {
-  \[ \virga c f \flexa \deminutum e \] \[ f \pes g \] g g g
+  \[ \virga c f \flexa \deminutum e \] \[ f \pes g \] g \divisioMinima g
 }
 gapahagaha = \relative c' {
   \[ g \pes bes \] a \[ a \flexa \deminutum g \] \[ g \episemInitium \pes a \episemFinis \]
@@ -43,7 +43,7 @@ aspergesMeNotesVaticana = \relative c' {
          \mbreak \malasatalatasaga \divisioMinima
   \choir \mbreak       \hapamapahagahagasatasa
          \mbreak             \gasalatamalama \divisioMaxima
-         \mbreak \malasatalatasaga \divisioMaxima
+         \mbreak \malasatalatasaga \divisioMaior
          \mbreak                   \gahapahagasatalasatasa
          \mbreak             \gasalatamalama \finalis
   \ps    \mbreak                         \masatasaga
@@ -52,7 +52,7 @@ aspergesMeNotesVaticana = \relative c' {
          \mbreak                                           \gahapagasalama \finalis
          \mbreak                         \masatasaga
          \mbreak                               \gapahagaha \divisioMaxima
-         \mbreak                                     \gatasaga
+         \mbreak                                     \gatasaga \divisioMinima
          \mbreak                               \gapahagaha \divisioMaxima
          \mbreak                                           \gahapagasalama \finalis
 %         \mbreak \malasatalatasaga  \finalis
