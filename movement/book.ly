@@ -93,6 +93,8 @@ antiphonPrintableSettings = {
     }
     \new Lyrics \lyricsto "cantus" {
       \override LyricHyphen #'minimum-distance = #0.5
+      \override LyricHyphen #'thickness = #0.5
+      \override LyricHyphen #'height = #0.25
       \override LyricText #'X-offset = #-0.5
       \override LyricText #'self-alignment-X = #LEFT
       \aspergesMeLyrics
