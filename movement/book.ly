@@ -15,9 +15,11 @@ TODO:
 #(ly:set-option 'point-and-click #f)
 #(ly:set-option 'relative-includes #t)
 
+% \override VaticanaStaff.VerticalAxisGroup #'minimum-Y-extent = #'(-2 . 2)
+
 % #(set-global-staff-size 17.82) % Points; 17.82 is song-book size; 20 for standard parts is default.
 
-% 5-16ths of an inch is 22.5 points.
+% 5-16ths of an inch is 22.5 points. 30 didn't fit on page.
 #(set-global-staff-size 30) % Points; 17.82 is song-book size; 20 for standard parts is default.
 %%--For debugging:
 %     \set Score.skipTypesetting = ##f % Place these lines among notes.
@@ -63,13 +65,15 @@ antiphonPrintableSettings = {
 ..%}
 
 \header {
-  title = "Antiphons"
+%%  title = "Antiphons"
 %%  composer = "(anonymus)"
-  arranger = \markup \tiny "Mark D. Blackwell, ed."
+  arranger = \markup \teeny "Mark D. Blackwell, ed."
   typesetter = "Mark D. Blackwell"
-  opus = \markup \tiny "Sept., 2011"
+  opus = \markup \teeny "Sept., 2011"
+  piece = \markup \tiny "Asperges Me, VIII. C"
+  meter = \markup \tiny \right-align ""
   duration = "? minutes"
-  copyright = \markup { \with-url #"http://lilypond.org/web/" \tiny \line {
+  copyright = \markup { \with-url #"http://lilypond.org/web/" \teeny \line {
     "Copyright 2011 Mark D. Blackwell, engraved LilyPond" #(ly:export (lilypond-version)) "(see github.com/MarkDBlackwell)"
   } }
   tagline = ""
@@ -89,8 +93,8 @@ antiphonPrintableSettings = {
     right-margin = 16\mm
 %%--For debugging:
 %     annotate-spacing = ##t
-     ragged-bottom = ##t
-     ragged-right = ##t
+%     ragged-bottom = ##t
+%    ragged-right = ##t
 %%--end 'for debugging'.
   } % paper
 
@@ -113,10 +117,10 @@ antiphonPrintableSettings = {
     \new VaticanaVoice = "cantus" { \transpose f c' \aspergesMeNotesVaticana
     }
     \new Lyrics \lyricsto "cantus" {
-      \override LyricHyphen #'minimum-distance = #0.6
+      \override LyricHyphen #'minimum-distance = #0.4
       \override LyricText #'X-offset = #-1
       \override LyricText #'self-alignment-X = #LEFT
-      \aspergesMeLyrics
+      \tiny \aspergesMeLyrics
     }
   >>
 }

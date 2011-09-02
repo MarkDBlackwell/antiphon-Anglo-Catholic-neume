@@ -57,7 +57,7 @@ aspergesMeNotes = {
 ..%}
 
 malasatalatasagaNoLigatures       = \relative c  {
-c \[ \auctum \descendens d \] \[ \virga f \inclinatum e \inclinatum d e \pes \deminutum f \] \augmentum g }
+s c \[ \auctum \descendens d \] \[ \virga f \inclinatum e \inclinatum d e \pes \deminutum f \] \augmentum g }
 
 hapamapahagahagasatasaNoLigatures = \relative c' {
 \[ a \quilisma bes c \] \[ \virga c bes \] \[ \virga a g \] a \[ \virga g f \] \[ e \pes f \] }
@@ -66,7 +66,7 @@ gasalatamalamaNoLigatures         = \relative c' {
 \[ \virga g \inclinatum f \inclinatum d \] s e \[ c d c \] \augmentum c }
 
 gahapahagasatalasatasaNoLigatures = \relative c' {
-\[ g \quilisma a \virga bes \inclinatum a \inclinatum g \] \[ \virga f e \] \[ \auctum \descendens d \] \[ f e \pes \deminutum f \] }
+\[ g \quilisma a \virga bes \inclinatum a \inclinatum g \] \[ \virga f e \] s \[ \auctum \descendens d \] \[ f e \pes \deminutum f \] }
 
 masatasagaNoLigatures             = \relative c  {
 \[ \virga c f \flexa \deminutum e \] \[ f \pes g \] g g g }
@@ -78,7 +78,7 @@ gatasagaNoLigatures               = \relative c' {
 \[ \virga g e \] \[ f \pes \deminutum g \] g g g }
 
 gahapagasalamaNoLigatures         = \relative c' {
-   g \[ g \quilisma a bes \] \[ \virga g \] f \[ f f f \] s \[ \virga d c \] }
+   g \[ g \quilisma a bes \] \[ \virga g \] f \[ f f f \] s \[ \virga d s c \] }
 
 aspergesMeNotesVaticana = \relative c' {
   \clef "vaticana-do1"
