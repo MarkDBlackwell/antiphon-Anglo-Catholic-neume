@@ -109,6 +109,7 @@ antiphonPrintableSettings = {
     \new VaticanaVoice = "cantus" { \transpose f c' \aspergesMeNotesVaticana
     }
     \new Lyrics \lyricsto "cantus" {
+      \override LyricHyphen #'minimum-distance = #0.6
       \override LyricText #'X-offset = #-1
       \override LyricText #'self-alignment-X = #LEFT
       \aspergesMeLyrics

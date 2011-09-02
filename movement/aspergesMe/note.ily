@@ -64,7 +64,7 @@ hapamapahagahagasatasaNoLigatures = \relative c' {
 
 gasalatamalamaNoLigatures         = \relative c' {
 %  g f d e c d c c }
-\[ g f d \] e \[ c d c \] \augmentum c }
+\[ g f d \] s e \[ c d c \] \augmentum c }
 
 gahapahagasatalasatasaNoLigatures = \relative c' {
 %  g a bes a g f e d f e f }
