@@ -14,7 +14,11 @@ TODO:
 %#(ly:set-option 'midi-extension "midi")
 #(ly:set-option 'point-and-click #f)
 #(ly:set-option 'relative-includes #t)
-#(set-global-staff-size 17.82) % Points; 17.82 is song-book size; 20 for standard parts is default.
+
+% #(set-global-staff-size 17.82) % Points; 17.82 is song-book size; 20 for standard parts is default.
+
+% 5-16ths of an inch is 22.5 points.
+#(set-global-staff-size 30) % Points; 17.82 is song-book size; 20 for standard parts is default.
 %%--For debugging:
 %     \set Score.skipTypesetting = ##f % Place these lines among notes.
 %     \set Score.skipTypesetting = ##t % Place these lines among notes.
