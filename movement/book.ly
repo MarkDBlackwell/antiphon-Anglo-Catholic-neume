@@ -2,28 +2,23 @@
 Author: Mark D. Blackwell.
 Change dates:
 (mdb) August 29, 2011 create first draft
-(mdb) September 1, 2011 improve formatting, correct word alignment
-TODO:
-* improve neumes
+(mdb) September 2, 2011 improve neumes, improve formatting, correct word alignment
 ..%}
 
 \version "2.14.1" % Made for LilyPond.
 
 % Overall options:
 
-%#(ly:set-option 'midi-extension "midi")
+% #(ly:set-option 'midi-extension "midi")
+
 #(ly:set-option 'point-and-click #f)
 #(ly:set-option 'relative-includes #t)
 
-% \override VaticanaStaff.VerticalAxisGroup #'minimum-Y-extent = #'(-2 . 2)
-
-% #(set-global-staff-size 17.82) % Points; 17.82 is song-book size; 20 for standard parts is default.
-
-% 5-16ths of an inch is 22.5 points. 30 didn't fit on page.
-#(set-global-staff-size 30) % Points; 17.82 is song-book size; 20 for standard parts is default.
+% Points; 17.82 is song-book size; 20 for standard parts is default.
+#(set-global-staff-size 40)
 %%--For debugging:
 %     \set Score.skipTypesetting = ##f % Place these lines among notes.
-%     \set Score.skipTypesetting = ##t % Place these lines among notes.
+%     \set Score.skipTypesetting = ##t
 %     showFirstLength = R1*10
 %     showLastLength  = R1*24
 %%--end 'for debugging'.
@@ -34,8 +29,8 @@ antiphonPrintableSettings = {
 %  #(set-accidental-style 'piano 'Score)
   \override Score.PaperColumn #'keep-inside-line = ##t
 %%--For debugging:
-     \override Score.BarNumber #'break-visibility = #all-visible
-     \set Score.barNumberVisibility = #all-bar-numbers-visible
+%     \override Score.BarNumber #'break-visibility = #all-visible
+%     \set Score.barNumberVisibility = #all-bar-numbers-visible
 %%--end 'for debugging'.
 }
 
@@ -51,11 +46,8 @@ antiphonPrintableSettings = {
 
 \layout { % All layouts.
   indent = 0\mm  short-indent = 0\mm
-  \context { \RemoveEmptyStaffContext }
-  \context { \DrumStaff
-    \remove "Axis_group_engraver"
-    \consists "Hara_kiri_engraver"
-    \override VerticalAxisGroup #'remove-empty = ##t
+  \context { \Lyrics
+    \override LyricText #'font-size = #-6
   }
 }
 
@@ -67,14 +59,10 @@ antiphonPrintableSettings = {
 \header {
 %%  title = "Antiphons"
 %%  composer = "(anonymus)"
-  arranger = \markup \teeny "Mark D. Blackwell, ed."
-  typesetter = "Mark D. Blackwell"
-  opus = \markup \teeny "Sept., 2011"
-  piece = \markup \tiny "Asperges Me, VIII. C"
-  meter = \markup \tiny \right-align ""
-  duration = "? minutes"
-  copyright = \markup { \with-url #"http://lilypond.org/web/" \teeny \line {
-    "Copyright 2011 Mark D. Blackwell, engraved LilyPond" #(ly:export (lilypond-version)) "(see github.com/MarkDBlackwell)"
+  opus = \markup \fontsize #-8 "Sept. 2011"
+  piece = \markup \fontsize #-4 { \italic { Asperges Me } VIII. C }
+  copyright = \markup { \fontsize #-8 \with-url #"http://lilypond.org/web/" \line {
+    "Copyright 2011 Mark D. Blackwell (ed.), engraved LilyPond" #(ly:export (lilypond-version)) "(see github.com/MarkDBlackwell)"
   } }
   tagline = ""
 }
@@ -84,20 +72,33 @@ antiphonPrintableSettings = {
     #(set-paper-size "letter")
     top-margin = 12\mm
     bottom-margin = 9\mm
+    ragged-bottom = ##t
     ragged-last-bottom = ##t % Seems to make the last system ragged-right.
     two-sided = ##f
 % The deepest rim of a hole made by a 3-hole punch is 16 mm from the edge; the inner margin must be at least that.
-%    inner-margin = 16\mm
-%    outer-margin = 8\mm
+%%    inner-margin = 16\mm
+%%    outer-margin = 8\mm
     left-margin = 16\mm
     right-margin = 16\mm
+    system-system-spacing #'basic-distance = #0.5
 %%--For debugging:
 %     annotate-spacing = ##t
-%     ragged-bottom = ##t
 %    ragged-right = ##t
 %%--end 'for debugging'.
   } % paper
 
+\score {
+  <<
+    \new VaticanaVoice = "cantus" { \transpose f c' \aspergesMeNotesVaticana
+    }
+    \new Lyrics \lyricsto "cantus" {
+      \override LyricHyphen #'minimum-distance = #0.5
+      \override LyricText #'X-offset = #-0.5
+      \override LyricText #'self-alignment-X = #LEFT
+      \aspergesMeLyrics
+    }
+  >>
+}
 %{..
   \score { \aspergesMePrintable
     \header {
@@ -110,23 +111,6 @@ antiphonPrintableSettings = {
   \score { \aspergesMePrintableVaticana
     \header { }
     \layout { \context { \VaticanaVoice \remove Vaticana_ligature_engraver } } }
-..%}
-
-\score {
-  <<
-    \new VaticanaVoice = "cantus" { \transpose f c' \aspergesMeNotesVaticana
-    }
-    \new Lyrics \lyricsto "cantus" {
-      \override LyricHyphen #'minimum-distance = #0.4
-      \override LyricText #'X-offset = #-1
-      \override LyricText #'self-alignment-X = #LEFT
-      \tiny \aspergesMeLyrics
-    }
-  >>
-}
-
-
-%{..
   \score { \aspergesMePrintableNeumes
     \header { }
     \layout { } }
@@ -134,13 +118,9 @@ antiphonPrintableSettings = {
 
 } %book
 
-%{..
 \midi { \context { \Score
   midiChannelMapping = #'instrument % Default is by instrument, not staff, as 'changes' documentation has it.
 } } % All midi's.
-..%}
 
-%{..
 \book { \bookOutputName "../out/movement/aspergesMe" \score { \new Staff { \unfoldRepeats \articulate <<
                                         \aspergesMeMidi >> } \midi { } } }
-..%}

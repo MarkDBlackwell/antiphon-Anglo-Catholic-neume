@@ -82,9 +82,7 @@ aspergesMePrintableNeumes = { \aspergesMePrintableSettings
 }
 ..%}
 
-%{..
 aspergesMeMidi = <<
   \new Staff \aspergesMeTempo
-  \new Staff \with { midiInstrument = #"synth voice"  } \aspergesMeNotes
+  \new Staff \with { midiInstrument = #"synth voice"  } \aspergesMeNotesVaticana
 >>
-..%}
