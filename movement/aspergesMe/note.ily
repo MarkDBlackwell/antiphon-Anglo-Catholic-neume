@@ -15,13 +15,13 @@ choir  = { }
 ps     = { }
 
 malasatalatasaga = \relative c  {
-  s c \[ \auctum \descendens d \] \[ \virga f \inclinatum e \inclinatum d e \pes \deminutum f \] \augmentum g
+  c \[ \auctum \descendens d \] \[ \virga f \inclinatum e \inclinatum d e \pes \deminutum f \] \augmentum g
 }
 hapamapahagahagasatasa = \relative c' {
   \[ a \quilisma bes c \] \[ \virga c bes \] \[ \virga a g \] a \[ \virga g \episemInitium f \episemFinis \] \divisioMinima \[ e \pes f \]
 }
 gasalatamalama = \relative c' {
-  \[ \virga g \inclinatum f \inclinatum d s \] s e \[ c \episemInitium d c \episemFinis \] \augmentum c \divisioMaxima
+  \[ \virga g \inclinatum f \inclinatum d \] s e \[ c \episemInitium d c \episemFinis \] \augmentum c \divisioMaxima
 }
 gahapahagasatalasatasa = \relative c' {
   \[ g \quilisma a \virga bes \inclinatum a \inclinatum g \] \[ \virga f e \] s \[ \auctum \descendens d \] \[ f e \pes \deminutum f \]
@@ -33,10 +33,10 @@ gapahagaha = \relative c' {
   g \[ g \pes bes \] a \[ a \flexa \deminutum g \] \[ g \episemInitium \pes a \episemFinis \]
 }
 gatasaga = \relative c' {
-  \[ \virga g e \] \[ f \pes \deminutum g \] g g
+  \[ \virga g e s \] \[ f \pes \deminutum g \] g g
 }
 gahapagasalama = \relative c' {
-  g \[ g \quilisma a bes \] \[ \virga g \] f \[ f f f \] s \[ \virga d \episemInitium s c \episemFinis \]
+  g \[ g \quilisma a bes \] \[ \virga g \] f \[ f f f \] s \[ \virga d \episemInitium c \episemFinis \]
 }
 aspergesMeNotesVaticana = \relative c' {
   \clef "vaticana-do1"
@@ -55,5 +55,5 @@ aspergesMeNotesVaticana = \relative c' {
          \mbreak                                     \gatasaga \divisioMinima
          \mbreak                               \gapahagaha \divisioMaxima
          \mbreak                                           \gahapagasalama \finalis
-%         \mbreak \malasatalatasaga  \finalis
+         \mbreak \malasatalatasaga \divisioMaxima \finalis
 }

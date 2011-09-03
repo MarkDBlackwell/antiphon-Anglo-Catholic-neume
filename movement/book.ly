@@ -119,10 +119,3 @@ antiphonPrintableSettings = {
 ..%}
 
 } %book
-
-\midi { \context { \Score
-  midiChannelMapping = #'instrument % Default is by instrument, not staff, as 'changes' documentation has it.
-} } % All midi's.
-
-\book { \bookOutputName "../out/movement/aspergesMe" \score { \new Staff { \unfoldRepeats \articulate <<
-                                        \aspergesMeMidi >> } \midi { } } }

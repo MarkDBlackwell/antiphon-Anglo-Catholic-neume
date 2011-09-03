@@ -81,8 +81,3 @@ aspergesMePrintableNeumes = { \aspergesMePrintableSettings
   >> % Stack of staves.
 }
 ..%}
-
-aspergesMeMidi = <<
-  \new Staff \aspergesMeTempo
-  \new Staff \with { midiInstrument = #"synth voice"  } \aspergesMeNotesVaticana
->>
