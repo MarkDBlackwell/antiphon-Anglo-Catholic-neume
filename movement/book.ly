@@ -1,11 +1,11 @@
+\version "2.14.2" % Made for LilyPond.
+
 %{..
 Author: Mark D. Blackwell.
 Change dates:
 (mdb) August 29, 2011 create first draft
 (mdb) September 2, 2011 improve neumes, improve formatting, correct word alignment
 ..%}
-
-\version "2.14.1" % Made for LilyPond.
 
 % Overall options:
 
