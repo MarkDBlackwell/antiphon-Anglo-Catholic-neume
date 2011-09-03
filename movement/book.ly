@@ -89,8 +89,10 @@ antiphonPrintableSettings = {
 
 \score {
   <<
-    \new VaticanaVoice = "cantus" { \transpose f c' \aspergesMeNotesVaticana
-    }
+    \new VaticanaVoice = "cantus" <<
+      \transpose f c' \aspergesMeNotesVaticana
+      \aspergesMeNotesVaticanaAdd
+    >>
     \new Lyrics \lyricsto "cantus" {
       \override LyricHyphen #'minimum-distance = #0.5
       \override LyricHyphen #'thickness = #0.5

@@ -57,3 +57,6 @@ aspergesMeNotesVaticana = \relative c' {
          \mbreak                                           \gahapagasalama \finalis
          \mbreak \malasatalatasaga \divisioMaxima \finalis
 }
+aspergesMeNotesVaticanaAdd = {
+  \repeat unfold 128 s \divisioMinima \repeat unfold 11 s
+}
