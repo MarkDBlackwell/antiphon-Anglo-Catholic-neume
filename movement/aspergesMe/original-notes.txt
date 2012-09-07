@@ -1,13 +1,23 @@
-The below represents the version used by two Anglo-Catholic churches in 
-Baltimore, Maryland (United States), as of 2011: Grace & St Peter's Church and 
+Found the English text at: http://www.ascensionandsaintagnes.org/html/mass/preparation/preparation.htm
+
+Some discussion of ICEL here: http://musicasacra.com/forum/comments.php?DiscussionID=5229
+
+It says Vatican II Hymnal (July 2011) has Asperges Me settings.
+
+For Asperges me in neumes, see: http://romaaeterna.jp/liber1/lu0011.html
+
+and (PDF) page 149 of: http://www.musicasacra.com/pdf/propers-guam.pdf
+
+The below represents the version used by two Anglo-Catholic churches in
+Baltimore, Maryland (United States), as of 2011: Grace & St Peter's Church and
 Mt. Calvary Church.
 
-Thou shalt purge me with hyssop, O 
-Lord, and I shall be clean: Thou 
+Thou shalt purge me with hyssop, O
+Lord, and I shall be clean: Thou
 shalt wash me, and I shall be whi-
 ter than snow. *Ps.* Have mercy upon me, O God,
-after Thy great goodness; according 
-to the multitude of Thy mercies, do away 
+after Thy great goodness; according
+to the multitude of Thy mercies, do away
 mine offences. Glory be to the Father,
 and to the Son, and to the Holy Ghost:
 as it was in the beginning, is now, and e-
@@ -18,29 +28,29 @@ Thou shalt purge me...
 c d f e d e f g  |  a bes c c bes a g a
 g f  |  e f g f d e c d c c  |  c
 d f e d e f g  |  g a bes a g f e d f e f g f d
-e c d c c  |  PS. c f e f g g  | 
+e c d c c  |  PS. c f e f g g  |
 g g g bes a a g g a  |  g e f g g
 g  |  g g g a bes
 g f f f f d c  |  c f e f g g
-g  |  g g bes a a a g g a  | 
+g  |  g g bes a a a g g a  |
 g e f g g  |  g g g g bes
-a a g g a  |  g g a bes g f  |  f f f d c  | 
-c d f e d e f g  | 
+a a g g a  |  g g a bes g f  |  f f f d c  |
+c d f e d e f g  |
 
 Basically:
 
 notes = \relative c {
 
-  c d \[ f e d e f \] g  |  \[ a bes c \] \[ c bes \] \[ a g \] a 
-  \[ g f \]  |  \[ e f \] \[ g f d \] e \[ c d c \] c  |  c 
-  d \[ f e d e f \] g  |  \[ g a bes a g \] \[ f e \] d \[ f e f \] \[ g f d \] 
-  e \[ c d c \] c  |  \ps \[ c f e \] \[ f g \] g  |  
-  g g \[ g bes \] a \[ a g \] \[ g a \]  |  \[ g e \] \[ f g \] g 
-  g  |  g g \[ g a bes \] 
-  g f \[ f f f \] \[ d c \]  |  \[ c f e \] \[ f g \] g 
-  g  |  g \[ g bes \] a a \[ a g \] \[ g a \]  |  
-  \[ g e \] \[ f g \] g  |  g g g \[ g bes \] 
-  a \[ a g \] \[ g a \]  |  g \[ g a bes \] g f  |  \[ f f f \] \[ d c \]  |  
-  c d \[ f e d e f \] g  |  
+  c d \[ f e d e f \] g  |  \[ a bes c \] \[ c bes \] \[ a g \] a
+  \[ g f \]  |  \[ e f \] \[ g f d \] e \[ c d c \] c  |  c
+  d \[ f e d e f \] g  |  \[ g a bes a g \] \[ f e \] d \[ f e f \] \[ g f d \]
+  e \[ c d c \] c  |  \ps \[ c f e \] \[ f g \] g  |
+  g g \[ g bes \] a \[ a g \] \[ g a \]  |  \[ g e \] \[ f g \] g
+  g  |  g g \[ g a bes \]
+  g f \[ f f f \] \[ d c \]  |  \[ c f e \] \[ f g \] g
+  g  |  g \[ g bes \] a a \[ a g \] \[ g a \]  |
+  \[ g e \] \[ f g \] g  |  g g g \[ g bes \]
+  a \[ a g \] \[ g a \]  |  g \[ g a bes \] g f  |  \[ f f f \] \[ d c \]  |
+  c d \[ f e d e f \] g  |
 
 }
